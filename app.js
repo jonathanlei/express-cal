@@ -1,3 +1,4 @@
+"use strict"
 /** Simple demo Express app. */
 
 const express = require("express");

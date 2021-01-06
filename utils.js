@@ -8,6 +8,7 @@ function convertStrNums(strNums) {
   // be handled in your route
   let numsList = [];
   for (let n of strNums){
+    // parseInt takes string that starts with number and return number, Number function is stricter
     if (isNaN(parseInt(n))){
       throw new BadRequestError( `${n} is not a number`);
     }else{
